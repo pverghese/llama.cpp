@@ -1164,6 +1164,7 @@ void common_print_available_devices() {
         ggml_backend_dev_memory(dev, &free, &total);
         printf("  %s: %s (%zu MiB, %zu MiB free)\n", ggml_backend_dev_name(dev), ggml_backend_dev_description(dev), total / MiB, free / MiB);
     }
+    fflush(stdout);
 }
 
 static void add_rpc_devices(const std::string & servers) {

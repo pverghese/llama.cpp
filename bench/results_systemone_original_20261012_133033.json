@@ -1,0 +1,228 @@
+{
+  "timestamp": "20261012_133033",
+  "server_url": "http://127.0.0.1:8096",
+  "endpoint": "/v1/systemone",
+  "input_file": "bench/original.jsonl",
+  "candidates": "symbols",
+  "prompt_mode": "raw",
+  "mode": "auto",
+  "total_items": 5,
+  "evaluated_count": 5,
+  "correct_count": 4,
+  "overall_accuracy_pct": 80.0,
+  "total_elapsed_sec": 1.0257944999902975,
+  "family_breakdown": {
+    "policy": {
+      "total": 5,
+      "correct": 4,
+      "accuracy_pct": 80.0,
+      "mean_prob": 0.0,
+      "mean_latency_ms": 204.80116000398993
+    }
+  },
+  "latency": {
+    "mean_ms": 204.80116000398993,
+    "median_ms": 192.5494000024628,
+    "min_ms": 174.80930000601802,
+    "max_ms": 256.7269999999553
+  },
+  "results": [
+    {
+      "id": "original-policy-01-0",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 256.7269999999553,
+      "input_tokens": 92,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-01-1",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 207.58800000476185,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-02-0",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 174.80930000601802,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-02-1",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 192.5494000024628,
+      "input_tokens": 81,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-03-0",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "no",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 192.33210000675172,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {}
+    }
+  ],
+  "benchmark_items": [
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-01",
+      "id": "original-policy-01-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: refunds require a receipt and purchase within 30 days. A customer bought 12 days ago but has no receipt. Issue a refund."
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-01",
+      "id": "original-policy-01-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "A receipt AND an age of at most 30 days are required. The purchase was 12 days ago; proof of purchase is absent. May we refund?"
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-02",
+      "id": "original-policy-02-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: trial users may export CSV; PDF needs a paid plan. Trial user asks for CSV."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-02",
+      "id": "original-policy-02-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "A trial account requests CSV export. Rules allow trial CSV, but reserve PDF for paid accounts."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-03",
+      "id": "original-policy-03-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: visitors need an escort unless they are registered contractors. A registered contractor arrives alone. Admit them."
+    }
+  ]
+}

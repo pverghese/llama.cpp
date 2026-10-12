@@ -1,0 +1,3416 @@
+{
+  "timestamp": "20261012_133357",
+  "server_url": "http://127.0.0.1:8096",
+  "endpoint": "/v1/systemone",
+  "input_file": "bench/original.jsonl",
+  "candidates": "symbols",
+  "prompt_mode": "raw",
+  "mode": "auto",
+  "total_items": 72,
+  "evaluated_count": 72,
+  "correct_count": 66,
+  "overall_accuracy_pct": 91.66666666666666,
+  "total_elapsed_sec": 14.031929499993566,
+  "family_breakdown": {
+    "adequacy": {
+      "total": 12,
+      "correct": 8,
+      "accuracy_pct": 66.66666666666666,
+      "mean_prob": 0.0,
+      "mean_latency_ms": 181.57152500013277
+    },
+    "extraction": {
+      "total": 12,
+      "correct": 11,
+      "accuracy_pct": 91.66666666666666,
+      "mean_prob": 0.936766479690003,
+      "mean_latency_ms": 181.41785000140467
+    },
+    "intent": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.9097948431709028,
+      "mean_latency_ms": 195.23597500059017
+    },
+    "ordinal": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.9728657350080968,
+      "mean_latency_ms": 202.4632583318938
+    },
+    "policy": {
+      "total": 12,
+      "correct": 11,
+      "accuracy_pct": 91.66666666666666,
+      "mean_prob": 0.0,
+      "mean_latency_ms": 197.13337500070338
+    },
+    "routing": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.8616565111854083,
+      "mean_latency_ms": 208.49927500118307
+    }
+  },
+  "latency": {
+    "mean_ms": 194.386876389318,
+    "median_ms": 198.852050001733,
+    "min_ms": 161.62290000647772,
+    "max_ms": 242.97750000550877
+  },
+  "results": [
+    {
+      "id": "original-policy-01-0",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 171.6415999981109,
+      "input_tokens": 92,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-01-1",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 200.7906000071671,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-02-0",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 196.9293000001926,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-02-1",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 186.30960000155028,
+      "input_tokens": 81,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-03-0",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "no",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 199.76889999816194,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-03-1",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 198.79280000168364,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-04-0",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 203.70250000269152,
+      "input_tokens": 92,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-04-1",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 205.3297999955248,
+      "input_tokens": 90,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-05-0",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 198.91130000178237,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-05-1",
+      "family": "policy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 195.80020000285003,
+      "input_tokens": 88,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-06-0",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 203.0914000060875,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-policy-06-1",
+      "family": "policy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 204.5324999926379,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-intent-01-0",
+      "family": "intent",
+      "expected": "refund",
+      "predicted": "refund",
+      "is_correct": true,
+      "confidence": 0.9221904463786967,
+      "probability": 0.9377523571029575,
+      "wall_ms": 193.37359999190085,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.008866309783022048,
+        "change_address": 0.0029490524378932357,
+        "other": 0.048738019865925575,
+        "refund": 0.9377523571029575,
+        "status": 0.0016942608102016813
+      }
+    },
+    {
+      "id": "original-intent-01-1",
+      "family": "intent",
+      "expected": "refund",
+      "predicted": "refund",
+      "is_correct": true,
+      "confidence": 0.7438581991119042,
+      "probability": 0.7950865592895233,
+      "wall_ms": 168.75769999751355,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.007351763438126869,
+        "change_address": 0.002959263324758588,
+        "other": 0.19282463381327852,
+        "refund": 0.7950865592895233,
+        "status": 0.001777780134312634
+      }
+    },
+    {
+      "id": "original-intent-02-0",
+      "family": "intent",
+      "expected": "status",
+      "predicted": "status",
+      "is_correct": true,
+      "confidence": 0.6320387738539098,
+      "probability": 0.705631019083128,
+      "wall_ms": 196.58300001174212,
+      "input_tokens": 81,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.003995100905221804,
+        "change_address": 0.014658430368811731,
+        "other": 0.2731191228058411,
+        "refund": 0.00259632683699735,
+        "status": 0.705631019083128
+      }
+    },
+    {
+      "id": "original-intent-02-1",
+      "family": "intent",
+      "expected": "status",
+      "predicted": "status",
+      "is_correct": true,
+      "confidence": 0.9646115918512385,
+      "probability": 0.9716892734809909,
+      "wall_ms": 199.04950000636745,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.0038807139569765397,
+        "change_address": 0.003436751728699057,
+        "other": 0.018457577999130594,
+        "refund": 0.002535682834202812,
+        "status": 0.9716892734809909
+      }
+    },
+    {
+      "id": "original-intent-03-0",
+      "family": "intent",
+      "expected": "change_address",
+      "predicted": "change_address",
+      "is_correct": true,
+      "confidence": 0.9707227361314702,
+      "probability": 0.9765781889051762,
+      "wall_ms": 199.45949999964796,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.003657093427379896,
+        "change_address": 0.9765781889051762,
+        "other": 0.013866888607738534,
+        "refund": 0.003906932715773224,
+        "status": 0.0019908963439322224
+      }
+    },
+    {
+      "id": "original-intent-03-1",
+      "family": "intent",
+      "expected": "change_address",
+      "predicted": "change_address",
+      "is_correct": true,
+      "confidence": 0.9551731509123598,
+      "probability": 0.9641385207298878,
+      "wall_ms": 199.9869999999646,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.004059412481096786,
+        "change_address": 0.9641385207298878,
+        "other": 0.027229562873696034,
+        "refund": 0.00317122108725828,
+        "status": 0.0014012828280610026
+      }
+    },
+    {
+      "id": "original-intent-04-0",
+      "family": "intent",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "is_correct": true,
+      "confidence": 0.8695551532195697,
+      "probability": 0.8956441225756558,
+      "wall_ms": 205.70049999514595,
+      "input_tokens": 85,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.8956441225756558,
+        "change_address": 0.002991652088417093,
+        "other": 0.09750756153833857,
+        "refund": 0.0027380281603387522,
+        "status": 0.0011186356372499028
+      }
+    },
+    {
+      "id": "original-intent-04-1",
+      "family": "intent",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "is_correct": true,
+      "confidence": 0.9333638862550311,
+      "probability": 0.9466911090040249,
+      "wall_ms": 163.94530000980012,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.9466911090040249,
+        "change_address": 0.003380266365769113,
+        "other": 0.046790541027611834,
+        "refund": 0.0020110191919863627,
+        "status": 0.0011270644106079384
+      }
+    },
+    {
+      "id": "original-intent-05-0",
+      "family": "intent",
+      "expected": "other",
+      "predicted": "other",
+      "is_correct": true,
+      "confidence": 0.8660452100435336,
+      "probability": 0.892836168034827,
+      "wall_ms": 199.5452999981353,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.010257778888606264,
+        "change_address": 0.004307627357108152,
+        "other": 0.892836168034827,
+        "refund": 0.088626956483192,
+        "status": 0.003971469236266683
+      }
+    },
+    {
+      "id": "original-intent-05-1",
+      "family": "intent",
+      "expected": "other",
+      "predicted": "other",
+      "is_correct": true,
+      "confidence": 0.9007759039038399,
+      "probability": 0.920620723123072,
+      "wall_ms": 196.48210000013933,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.010431083572598455,
+        "change_address": 0.004603425978597329,
+        "other": 0.920620723123072,
+        "refund": 0.059431605521375684,
+        "status": 0.004913161804356511
+      }
+    },
+    {
+      "id": "original-intent-06-0",
+      "family": "intent",
+      "expected": "status",
+      "predicted": "status",
+      "is_correct": true,
+      "confidence": 0.9417181595136778,
+      "probability": 0.9533745276109422,
+      "wall_ms": 242.97750000550877,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.0052281080264274795,
+        "change_address": 0.00349839947043793,
+        "other": 0.03358814216540565,
+        "refund": 0.004310822726786763,
+        "status": 0.9533745276109422
+      }
+    },
+    {
+      "id": "original-intent-06-1",
+      "family": "intent",
+      "expected": "status",
+      "predicted": "status",
+      "is_correct": true,
+      "confidence": 0.9468694363883092,
+      "probability": 0.9574955491106475,
+      "wall_ms": 176.97069999121595,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {
+        "cancel": 0.005418064190397514,
+        "change_address": 0.0028887964745820715,
+        "other": 0.030964389050096696,
+        "refund": 0.003233201174276249,
+        "status": 0.9574955491106475
+      }
+    },
+    {
+      "id": "original-ordinal-01-0",
+      "family": "ordinal",
+      "expected": 0,
+      "predicted": "0",
+      "is_correct": true,
+      "confidence": 0.9782292180593365,
+      "probability": 0.9875906678986399,
+      "wall_ms": 204.40960000269115,
+      "input_tokens": 93,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.9875906678986399,
+        "1": 0.006044820763406459,
+        "2": 0.0033675728366033726,
+        "3": 0.0029969385013500854
+      }
+    },
+    {
+      "id": "original-ordinal-01-1",
+      "family": "ordinal",
+      "expected": 0,
+      "predicted": "0",
+      "is_correct": true,
+      "confidence": 0.9802120192747408,
+      "probability": 0.9880734304662728,
+      "wall_ms": 187.41189999855123,
+      "input_tokens": 94,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.9880734304662728,
+        "1": 0.00653762081240624,
+        "2": 0.0029164862511100913,
+        "3": 0.0024724624702109304
+      }
+    },
+    {
+      "id": "original-ordinal-02-0",
+      "family": "ordinal",
+      "expected": 1,
+      "predicted": "1",
+      "is_correct": true,
+      "confidence": 0.9383811110715115,
+      "probability": 0.9435901827955239,
+      "wall_ms": 204.64419999916572,
+      "input_tokens": 96,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.02100689888118829,
+        "1": 0.9435901827955239,
+        "2": 0.030193846599275414,
+        "3": 0.005209071724012444
+      }
+    },
+    {
+      "id": "original-ordinal-02-1",
+      "family": "ordinal",
+      "expected": 1,
+      "predicted": "1",
+      "is_correct": true,
+      "confidence": 0.9739389393997592,
+      "probability": 0.9777761136034353,
+      "wall_ms": 220.61819999362342,
+      "input_tokens": 97,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.011427392610781833,
+        "1": 0.9777761136034353,
+        "2": 0.0069593195821064935,
+        "3": 0.0038371742036762426
+      }
+    },
+    {
+      "id": "original-ordinal-03-0",
+      "family": "ordinal",
+      "expected": 2,
+      "predicted": "2",
+      "is_correct": true,
+      "confidence": 0.983818974006664,
+      "probability": 0.9866574106620228,
+      "wall_ms": 202.5296000065282,
+      "input_tokens": 93,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.0028384366553588776,
+        "1": 0.0036987585342879107,
+        "2": 0.9866574106620228,
+        "3": 0.006805394148330351
+      }
+    },
+    {
+      "id": "original-ordinal-03-1",
+      "family": "ordinal",
+      "expected": 2,
+      "predicted": "2",
+      "is_correct": true,
+      "confidence": 0.9739805296781823,
+      "probability": 0.9799943084740577,
+      "wall_ms": 201.6187999979593,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.006013778795875291,
+        "1": 0.006366723250315301,
+        "2": 0.9799943084740577,
+        "3": 0.007625189479751805
+      }
+    },
+    {
+      "id": "original-ordinal-04-0",
+      "family": "ordinal",
+      "expected": 3,
+      "predicted": "3",
+      "is_correct": true,
+      "confidence": 0.9589140345806965,
+      "probability": 0.9733801829823628,
+      "wall_ms": 204.9263999942923,
+      "input_tokens": 95,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.005225454635227975,
+        "1": 0.00401523913121042,
+        "2": 0.017379123251198777,
+        "3": 0.9733801829823628
+      }
+    },
+    {
+      "id": "original-ordinal-04-1",
+      "family": "ordinal",
+      "expected": 3,
+      "predicted": "3",
+      "is_correct": true,
+      "confidence": 0.8956610806288624,
+      "probability": 0.9432682423836444,
+      "wall_ms": 202.786499998183,
+      "input_tokens": 94,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.019177377059874146,
+        "1": 0.009252407635033849,
+        "2": 0.028301972921447482,
+        "3": 0.9432682423836444
+      }
+    },
+    {
+      "id": "original-ordinal-05-0",
+      "family": "ordinal",
+      "expected": 0,
+      "predicted": "0",
+      "is_correct": true,
+      "confidence": 0.9619141421573575,
+      "probability": 0.9771449397255835,
+      "wall_ms": 178.67839999962598,
+      "input_tokens": 98,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.9771449397255835,
+        "1": 0.011119422286690488,
+        "2": 0.008240478407226337,
+        "3": 0.0034951595804997865
+      }
+    },
+    {
+      "id": "original-ordinal-05-1",
+      "family": "ordinal",
+      "expected": 0,
+      "predicted": "0",
+      "is_correct": true,
+      "confidence": 0.9034907422625379,
+      "probability": 0.9468399205143977,
+      "wall_ms": 193.48689999605995,
+      "input_tokens": 97,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.9468399205143977,
+        "1": 0.020866475153050967,
+        "2": 0.02123803041324339,
+        "3": 0.011055573919308113
+      }
+    },
+    {
+      "id": "original-ordinal-06-0",
+      "family": "ordinal",
+      "expected": 2,
+      "predicted": "2",
+      "is_correct": true,
+      "confidence": 0.9769261932832077,
+      "probability": 0.980452345945306,
+      "wall_ms": 207.9751999990549,
+      "input_tokens": 98,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.0035261526620982892,
+        "1": 0.009314962191786591,
+        "2": 0.980452345945306,
+        "3": 0.0067065392008090864
+      }
+    },
+    {
+      "id": "original-ordinal-06-1",
+      "family": "ordinal",
+      "expected": 2,
+      "predicted": "2",
+      "is_correct": true,
+      "confidence": 0.9872638740117505,
+      "probability": 0.9896210746459154,
+      "wall_ms": 220.47339999699034,
+      "input_tokens": 106,
+      "cached_tokens": 0,
+      "probabilities": {
+        "0": 0.002357200634164949,
+        "1": 0.0036422861149333833,
+        "2": 0.9896210746459154,
+        "3": 0.004379438604986177
+      }
+    },
+    {
+      "id": "original-extraction-01-0",
+      "family": "extraction",
+      "expected": "pickup",
+      "predicted": "pickup",
+      "is_correct": true,
+      "confidence": 0.9342295484090458,
+      "probability": 0.9506721613067843,
+      "wall_ms": 185.23889999778476,
+      "input_tokens": 77,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.012895485096020804,
+        "pickup": 0.9506721613067843,
+        "post": 0.026433586996420795,
+        "unknown": 0.009998766600773973
+      }
+    },
+    {
+      "id": "original-extraction-01-1",
+      "family": "extraction",
+      "expected": "pickup",
+      "predicted": "pickup",
+      "is_correct": true,
+      "confidence": 0.9260320033011368,
+      "probability": 0.9445240024758526,
+      "wall_ms": 205.71270000073127,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.0064983013880359364,
+        "pickup": 0.9445240024758526,
+        "post": 0.03467666673663212,
+        "unknown": 0.01430102939947919
+      }
+    },
+    {
+      "id": "original-extraction-02-0",
+      "family": "extraction",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "is_correct": true,
+      "confidence": 0.8876794842273553,
+      "probability": 0.9157596131705165,
+      "wall_ms": 196.84300001244992,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.006066693826584805,
+        "pickup": 0.006736943781622467,
+        "post": 0.07143674922127627,
+        "unknown": 0.9157596131705165
+      }
+    },
+    {
+      "id": "original-extraction-02-1",
+      "family": "extraction",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "is_correct": true,
+      "confidence": 0.9451539528144536,
+      "probability": 0.9588654646108402,
+      "wall_ms": 203.0291999981273,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.00890312049108138,
+        "pickup": 0.005242946790268687,
+        "post": 0.026988468107809707,
+        "unknown": 0.9588654646108402
+      }
+    },
+    {
+      "id": "original-extraction-03-0",
+      "family": "extraction",
+      "expected": "courier",
+      "predicted": "pickup",
+      "is_correct": false,
+      "confidence": 0.5624177894127033,
+      "probability": 0.6718133420595275,
+      "wall_ms": 172.66799999924842,
+      "input_tokens": 83,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.22226215566761748,
+        "pickup": 0.6718133420595275,
+        "post": 0.020348486705409112,
+        "unknown": 0.08557601556744589
+      }
+    },
+    {
+      "id": "original-extraction-03-1",
+      "family": "extraction",
+      "expected": "courier",
+      "predicted": "courier",
+      "is_correct": true,
+      "confidence": 0.9777530119501837,
+      "probability": 0.9833147589626378,
+      "wall_ms": 199.60169999103528,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.9833147589626378,
+        "pickup": 0.0058637276897280715,
+        "post": 0.0057474510328080364,
+        "unknown": 0.005074062314826249
+      }
+    },
+    {
+      "id": "original-extraction-04-0",
+      "family": "extraction",
+      "expected": "post",
+      "predicted": "post",
+      "is_correct": true,
+      "confidence": 0.9700163739962019,
+      "probability": 0.9775122804971514,
+      "wall_ms": 164.41050000139512,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.006460049376660862,
+        "pickup": 0.00406463851222409,
+        "post": 0.9775122804971514,
+        "unknown": 0.011963031613963554
+      }
+    },
+    {
+      "id": "original-extraction-04-1",
+      "family": "extraction",
+      "expected": "post",
+      "predicted": "post",
+      "is_correct": true,
+      "confidence": 0.9778476348532849,
+      "probability": 0.9833857261399637,
+      "wall_ms": 161.62290000647772,
+      "input_tokens": 75,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.004404663416237438,
+        "pickup": 0.0035909930149366207,
+        "post": 0.9833857261399637,
+        "unknown": 0.008618617428862212
+      }
+    },
+    {
+      "id": "original-extraction-05-0",
+      "family": "extraction",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "is_correct": true,
+      "confidence": 0.9627903476890002,
+      "probability": 0.9720927607667501,
+      "wall_ms": 164.39420000824612,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.006644032970874134,
+        "pickup": 0.009649620779648637,
+        "post": 0.011613585482727139,
+        "unknown": 0.9720927607667501
+      }
+    },
+    {
+      "id": "original-extraction-05-1",
+      "family": "extraction",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "is_correct": true,
+      "confidence": 0.9118976894486911,
+      "probability": 0.9339232670865183,
+      "wall_ms": 161.74640000099316,
+      "input_tokens": 75,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.024480774240905168,
+        "pickup": 0.015912983214856638,
+        "post": 0.025682975457719876,
+        "unknown": 0.9339232670865183
+      }
+    },
+    {
+      "id": "original-extraction-06-0",
+      "family": "extraction",
+      "expected": "courier",
+      "predicted": "courier",
+      "is_correct": true,
+      "confidence": 0.9747695977836298,
+      "probability": 0.9810771983377223,
+      "wall_ms": 166.16680000151973,
+      "input_tokens": 79,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.9810771983377223,
+        "pickup": 0.003324448307797729,
+        "post": 0.010696496073139687,
+        "unknown": 0.004901857281340154
+      }
+    },
+    {
+      "id": "original-extraction-06-1",
+      "family": "extraction",
+      "expected": "courier",
+      "predicted": "courier",
+      "is_correct": true,
+      "confidence": 0.9576762411543629,
+      "probability": 0.9682571808657722,
+      "wall_ms": 195.5798999988474,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {
+        "courier": 0.9682571808657722,
+        "pickup": 0.004463982097352162,
+        "post": 0.0181418756877163,
+        "unknown": 0.009136961349159374
+      }
+    },
+    {
+      "id": "original-adequacy-01-0",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 172.26019999361597,
+      "input_tokens": 76,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-01-1",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 188.67830000817776,
+      "input_tokens": 72,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-02-0",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 177.89469999843277,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-02-1",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 166.63750000589062,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-03-0",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "yes",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 181.02799999178387,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-03-1",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "yes",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 199.26700000360142,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-04-0",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 171.44200000620913,
+      "input_tokens": 83,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-04-1",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 198.40159999148455,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-05-0",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "yes",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 179.92900000535883,
+      "input_tokens": 72,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-05-1",
+      "family": "adequacy",
+      "expected": "no",
+      "predicted": "yes",
+      "is_correct": false,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 171.1256999988109,
+      "input_tokens": 72,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-06-0",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 176.57510000572074,
+      "input_tokens": 84,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-adequacy-06-1",
+      "family": "adequacy",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 195.61919999250676,
+      "input_tokens": 85,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "original-routing-01-0",
+      "family": "routing",
+      "expected": "math",
+      "predicted": "math",
+      "is_correct": true,
+      "confidence": 0.8185028647240258,
+      "probability": 0.8487523872700214,
+      "wall_ms": 207.66460000595544,
+      "input_tokens": 106,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.019371170002319603,
+        "coding_agent": 0.0037085502867805725,
+        "document": 0.006282328244531574,
+        "general": 0.08758395587732633,
+        "math": 0.8487523872700214,
+        "tools": 0.03430160831902042
+      }
+    },
+    {
+      "id": "original-routing-01-1",
+      "family": "routing",
+      "expected": "math",
+      "predicted": "math",
+      "is_correct": true,
+      "confidence": 0.7679175942128089,
+      "probability": 0.8065979951773408,
+      "wall_ms": 204.90799999970477,
+      "input_tokens": 102,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.028725885667184196,
+        "coding_agent": 0.00423604200702326,
+        "document": 0.0077689107658112265,
+        "general": 0.10419241773691323,
+        "math": 0.8065979951773408,
+        "tools": 0.04847874864572747
+      }
+    },
+    {
+      "id": "original-routing-02-0",
+      "family": "routing",
+      "expected": "coding",
+      "predicted": "coding",
+      "is_correct": true,
+      "confidence": 0.8372211927660388,
+      "probability": 0.864350993971699,
+      "wall_ms": 210.6766999932006,
+      "input_tokens": 108,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.864350993971699,
+        "coding_agent": 0.014162294179326391,
+        "document": 0.0037609714695462614,
+        "general": 0.11311681405836065,
+        "math": 0.003191654560444912,
+        "tools": 0.0014172717606226826
+      }
+    },
+    {
+      "id": "original-routing-02-1",
+      "family": "routing",
+      "expected": "coding",
+      "predicted": "coding",
+      "is_correct": true,
+      "confidence": 0.897240369537447,
+      "probability": 0.9143669746145392,
+      "wall_ms": 221.74819999781903,
+      "input_tokens": 104,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.9143669746145392,
+        "coding_agent": 0.00706996678412523,
+        "document": 0.0044776451971824775,
+        "general": 0.06687849442022746,
+        "math": 0.005312403436882641,
+        "tools": 0.0018945155470431764
+      }
+    },
+    {
+      "id": "original-routing-03-0",
+      "family": "routing",
+      "expected": "coding_agent",
+      "predicted": "coding_agent",
+      "is_correct": true,
+      "confidence": 0.9422295217895849,
+      "probability": 0.9518579348246541,
+      "wall_ms": 190.42510000872426,
+      "input_tokens": 108,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.009404903070691618,
+        "coding_agent": 0.9518579348246541,
+        "document": 0.003976389101934336,
+        "general": 0.023324868575853582,
+        "math": 0.002081273500819226,
+        "tools": 0.009354630926047209
+      }
+    },
+    {
+      "id": "original-routing-03-1",
+      "family": "routing",
+      "expected": "coding_agent",
+      "predicted": "coding_agent",
+      "is_correct": true,
+      "confidence": 0.9302550524622248,
+      "probability": 0.9418792103851874,
+      "wall_ms": 214.3532000045525,
+      "input_tokens": 111,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.010215074015143832,
+        "coding_agent": 0.9418792103851874,
+        "document": 0.004180025787888831,
+        "general": 0.03749694585812676,
+        "math": 0.0019011236410868086,
+        "tools": 0.004327620312566567
+      }
+    },
+    {
+      "id": "original-routing-04-0",
+      "family": "routing",
+      "expected": "document",
+      "predicted": "document",
+      "is_correct": true,
+      "confidence": 0.758260881311969,
+      "probability": 0.7985507344266408,
+      "wall_ms": 210.94010000524577,
+      "input_tokens": 104,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.006707920272329389,
+        "coding_agent": 0.00543673281008362,
+        "document": 0.7985507344266408,
+        "general": 0.1012378567846136,
+        "math": 0.0056222256173796515,
+        "tools": 0.08244453008895297
+      }
+    },
+    {
+      "id": "original-routing-04-1",
+      "family": "routing",
+      "expected": "document",
+      "predicted": "document",
+      "is_correct": true,
+      "confidence": 0.8148590830709076,
+      "probability": 0.8457159025590897,
+      "wall_ms": 214.84420000342652,
+      "input_tokens": 103,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.006600419837139539,
+        "coding_agent": 0.006248847965928926,
+        "document": 0.8457159025590897,
+        "general": 0.10384636268965398,
+        "math": 0.005031578543937928,
+        "tools": 0.03255688840424991
+      }
+    },
+    {
+      "id": "original-routing-05-0",
+      "family": "routing",
+      "expected": "tools",
+      "predicted": "tools",
+      "is_correct": true,
+      "confidence": 0.9569997208700249,
+      "probability": 0.9641664340583541,
+      "wall_ms": 214.73710000282153,
+      "input_tokens": 105,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.0031466635551048354,
+        "coding_agent": 0.002666370232752111,
+        "document": 0.0025592515613044784,
+        "general": 0.02574928437175593,
+        "math": 0.0017119962207285087,
+        "tools": 0.9641664340583541
+      }
+    },
+    {
+      "id": "original-routing-05-1",
+      "family": "routing",
+      "expected": "tools",
+      "predicted": "tools",
+      "is_correct": true,
+      "confidence": 0.7110625212688958,
+      "probability": 0.7592187677240798,
+      "wall_ms": 190.32369999331422,
+      "input_tokens": 105,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.005244710095055312,
+        "coding_agent": 0.002934080634193088,
+        "document": 0.003178948520936429,
+        "general": 0.22770503284363733,
+        "math": 0.0017184601820980966,
+        "tools": 0.7592187677240798
+      }
+    },
+    {
+      "id": "original-routing-06-0",
+      "family": "routing",
+      "expected": "general",
+      "predicted": "general",
+      "is_correct": true,
+      "confidence": 0.8431908649809916,
+      "probability": 0.869325720817493,
+      "wall_ms": 218.0408999993233,
+      "input_tokens": 105,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.011969050136040492,
+        "coding_agent": 0.007281909244299881,
+        "document": 0.01392284662500244,
+        "general": 0.869325720817493,
+        "math": 0.005274572461616606,
+        "tools": 0.09222590071554744
+      }
+    },
+    {
+      "id": "original-routing-06-1",
+      "family": "routing",
+      "expected": "general",
+      "predicted": "general",
+      "is_correct": true,
+      "confidence": 0.7301140940749599,
+      "probability": 0.7750950783957998,
+      "wall_ms": 203.32950000010896,
+      "input_tokens": 103,
+      "cached_tokens": 0,
+      "probabilities": {
+        "coding": 0.018133836183850015,
+        "coding_agent": 0.00655460029513864,
+        "document": 0.0147730202342136,
+        "general": 0.7750950783957998,
+        "math": 0.004101724936763518,
+        "tools": 0.18134173995423433
+      }
+    }
+  ],
+  "benchmark_items": [
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-01",
+      "id": "original-policy-01-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: refunds require a receipt and purchase within 30 days. A customer bought 12 days ago but has no receipt. Issue a refund."
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-01",
+      "id": "original-policy-01-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "A receipt AND an age of at most 30 days are required. The purchase was 12 days ago; proof of purchase is absent. May we refund?"
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-02",
+      "id": "original-policy-02-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: trial users may export CSV; PDF needs a paid plan. Trial user asks for CSV."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-02",
+      "id": "original-policy-02-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "A trial account requests CSV export. Rules allow trial CSV, but reserve PDF for paid accounts."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-03",
+      "id": "original-policy-03-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: visitors need an escort unless they are registered contractors. A registered contractor arrives alone. Admit them."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-03",
+      "id": "original-policy-03-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Escort rule exempts registered contractors. This visitor is a registered contractor without an escort. Can they enter?"
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-04",
+      "id": "original-policy-04-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: send a reminder only when payment is overdue and no dispute is open. Payment is overdue; a dispute is open. Send reminder."
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-04",
+      "id": "original-policy-04-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "There is an open dispute on an overdue invoice. Reminders require overdue status AND absence of disputes. Is a reminder allowed?"
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-05",
+      "id": "original-policy-05-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: staff may access files in their own team. A temporary suspension overrides all access. The staff member owns the team but is suspended. Open its file."
+    },
+    {
+      "expected": "no",
+      "family": "policy",
+      "group": "original-policy-05",
+      "id": "original-policy-05-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Suspension blocks access even to own-team files. A suspended employee requests their own team file. May it be opened?"
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-06",
+      "id": "original-policy-06-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Policy: bookings can be cancelled free until 24 hours before departure, including exactly 24 hours. Departure is 24 hours away. Cancel free."
+    },
+    {
+      "expected": "yes",
+      "family": "policy",
+      "group": "original-policy-06",
+      "id": "original-policy-06-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "A condition is missing or a prohibition applies.",
+          "true": "Every required condition is established and no prohibition applies."
+        },
+        "instructions": "Under the stated policy, is the requested action permitted? Treat unproved required conditions as not satisfied.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "There are exactly 24 hours until departure. Free cancellation is allowed at or before that 24-hour cutoff."
+    },
+    {
+      "expected": "refund",
+      "family": "intent",
+      "group": "original-intent-01",
+      "id": "original-intent-01-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Do not cancel my membership. Please return the duplicate charge."
+    },
+    {
+      "expected": "refund",
+      "family": "intent",
+      "group": "original-intent-01",
+      "id": "original-intent-01-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Keep my subscription active; I only want the second charge refunded."
+    },
+    {
+      "expected": "status",
+      "family": "intent",
+      "group": "original-intent-02",
+      "id": "original-intent-02-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Where is the parcel? Keep the delivery address as it is."
+    },
+    {
+      "expected": "status",
+      "family": "intent",
+      "group": "original-intent-02",
+      "id": "original-intent-02-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Please tell me the package progress. No address changes needed."
+    },
+    {
+      "expected": "change_address",
+      "family": "intent",
+      "group": "original-intent-03",
+      "id": "original-intent-03-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The order has not shipped. Send it to my new office instead."
+    },
+    {
+      "expected": "change_address",
+      "family": "intent",
+      "group": "original-intent-03",
+      "id": "original-intent-03-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Please replace my shipping address with the office address before dispatch."
+    },
+    {
+      "expected": "cancel",
+      "family": "intent",
+      "group": "original-intent-04",
+      "id": "original-intent-04-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Stop renewing my subscription after this month; I am not asking for money back."
+    },
+    {
+      "expected": "cancel",
+      "family": "intent",
+      "group": "original-intent-04",
+      "id": "original-intent-04-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "End the membership at the next renewal. No refund requested."
+    },
+    {
+      "expected": "other",
+      "family": "intent",
+      "group": "original-intent-05",
+      "id": "original-intent-05-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Your refund policy is clearer now. Thanks for explaining it."
+    },
+    {
+      "expected": "other",
+      "family": "intent",
+      "group": "original-intent-05",
+      "id": "original-intent-05-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Thank you; I understand the policy on refunds now."
+    },
+    {
+      "expected": "status",
+      "family": "intent",
+      "group": "original-intent-06",
+      "id": "original-intent-06-0",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I cancelled yesterday. Was the parcel delivered yet?"
+    },
+    {
+      "expected": "status",
+      "family": "intent",
+      "group": "original-intent-06",
+      "id": "original-intent-06-1",
+      "labels": [
+        "cancel",
+        "refund",
+        "status",
+        "change_address",
+        "other"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "cancel": "End an existing subscription",
+          "change_address": "Modify a delivery address",
+          "other": "None of these actions is requested",
+          "refund": "Return money already charged",
+          "status": "Learn delivery progress"
+        },
+        "instructions": "Select the primary requested action. A mention without a request does not establish intent.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The cancellation is already done. My question is whether the shipment has arrived."
+    },
+    {
+      "expected": 0,
+      "family": "ordinal",
+      "group": "original-ordinal-01",
+      "id": "original-ordinal-01-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "The icon is misaligned. Every function works."
+    },
+    {
+      "expected": 0,
+      "family": "ordinal",
+      "group": "original-ordinal-01",
+      "id": "original-ordinal-01-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "All features work normally; only an icon looks off. "
+    },
+    {
+      "expected": 1,
+      "family": "ordinal",
+      "group": "original-ordinal-02",
+      "id": "original-ordinal-02-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "One user cannot download an attachment but can open it in the browser."
+    },
+    {
+      "expected": 1,
+      "family": "ordinal",
+      "group": "original-ordinal-02",
+      "id": "original-ordinal-02-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "A single user has a download failure; viewing the attachment online still works."
+    },
+    {
+      "expected": 2,
+      "family": "ordinal",
+      "group": "original-ordinal-03",
+      "id": "original-ordinal-03-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "All customers cannot sign in. No records are lost."
+    },
+    {
+      "expected": 2,
+      "family": "ordinal",
+      "group": "original-ordinal-03",
+      "id": "original-ordinal-03-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Login is unavailable to every customer, but stored data remains intact."
+    },
+    {
+      "expected": 3,
+      "family": "ordinal",
+      "group": "original-ordinal-04",
+      "id": "original-ordinal-04-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Backups and original customer records have been irreversibly deleted."
+    },
+    {
+      "expected": 3,
+      "family": "ordinal",
+      "group": "original-ordinal-04",
+      "id": "original-ordinal-04-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Customer records are permanently gone and there is no remaining backup."
+    },
+    {
+      "expected": 0,
+      "family": "ordinal",
+      "group": "original-ordinal-05",
+      "id": "original-ordinal-05-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "A banner says possible data loss. Investigation confirms no loss and no function failure."
+    },
+    {
+      "expected": 0,
+      "family": "ordinal",
+      "group": "original-ordinal-05",
+      "id": "original-ordinal-05-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Despite a warning banner, checks find every function working and no missing data."
+    },
+    {
+      "expected": 2,
+      "family": "ordinal",
+      "group": "original-ordinal-06",
+      "id": "original-ordinal-06-0",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Many users cannot edit orders; read-only access still works. No data loss."
+    },
+    {
+      "expected": 2,
+      "family": "ordinal",
+      "group": "original-ordinal-06",
+      "id": "original-ordinal-06-1",
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": [
+          "No function impaired; cosmetic only",
+          "One user or a nonessential function impaired, with a workaround",
+          "Many users blocked from a core function, no data loss",
+          "Confirmed irreversible data loss or physical harm"
+        ],
+        "instructions": "Rate incident impact using only reported facts. Use the highest fully supported level.",
+        "type": "score"
+      },
+      "split": "public",
+      "state": "Order editing, a core function, is blocked for many users. Viewing orders is possible; nothing has been lost."
+    },
+    {
+      "expected": "pickup",
+      "family": "extraction",
+      "group": "original-extraction-01",
+      "id": "original-extraction-01-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "We considered courier, then confirmed pickup at the depot."
+    },
+    {
+      "expected": "pickup",
+      "family": "extraction",
+      "group": "original-extraction-01",
+      "id": "original-extraction-01-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The final arrangement is depot pickup, replacing the earlier courier idea."
+    },
+    {
+      "expected": "unknown",
+      "family": "extraction",
+      "group": "original-extraction-02",
+      "id": "original-extraction-02-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "If approved, we might use post. No method is booked yet."
+    },
+    {
+      "expected": "unknown",
+      "family": "extraction",
+      "group": "original-extraction-02",
+      "id": "original-extraction-02-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Postal delivery is a possibility awaiting approval; nothing has been confirmed."
+    },
+    {
+      "expected": "courier",
+      "family": "extraction",
+      "group": "original-extraction-03",
+      "id": "original-extraction-03-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Courier booked for Tuesday. The customer asked about pickup but did not change the booking."
+    },
+    {
+      "expected": "courier",
+      "family": "extraction",
+      "group": "original-extraction-03",
+      "id": "original-extraction-03-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Tuesday courier delivery is confirmed. A later question about pickup did not alter it."
+    },
+    {
+      "expected": "post",
+      "family": "extraction",
+      "group": "original-extraction-04",
+      "id": "original-extraction-04-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Pickup was cancelled. The parcel was handed to the postal service."
+    },
+    {
+      "expected": "post",
+      "family": "extraction",
+      "group": "original-extraction-04",
+      "id": "original-extraction-04-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "After cancelling collection, we sent the package by post."
+    },
+    {
+      "expected": "unknown",
+      "family": "extraction",
+      "group": "original-extraction-05",
+      "id": "original-extraction-05-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "No courier service is available. We have not decided what to do."
+    },
+    {
+      "expected": "unknown",
+      "family": "extraction",
+      "group": "original-extraction-05",
+      "id": "original-extraction-05-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Courier is unavailable and no alternative has been selected."
+    },
+    {
+      "expected": "courier",
+      "family": "extraction",
+      "group": "original-extraction-06",
+      "id": "original-extraction-06-0",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The final signed order says courier, despite an old email saying post."
+    },
+    {
+      "expected": "courier",
+      "family": "extraction",
+      "group": "original-extraction-06",
+      "id": "original-extraction-06-1",
+      "labels": [
+        "courier",
+        "pickup",
+        "post",
+        "unknown"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "courier": "Courier delivery",
+          "pickup": "Customer pickup",
+          "post": "Postal service",
+          "unknown": "No final confirmed method"
+        },
+        "instructions": "Extract the final confirmed delivery method. Ignore cancelled plans and hypothetical alternatives. Choose unknown if no final method is confirmed.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "An earlier postal plan was superseded by the signed courier order."
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-01",
+      "id": "original-adequacy-01-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Return only the sum of 17 and 25. Response:42"
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-01",
+      "id": "original-adequacy-01-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Task: Give just 17+25. Answer:42"
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-02",
+      "id": "original-adequacy-02-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Name both colors from reference. Reference: red and teal. Response:red"
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-02",
+      "id": "original-adequacy-02-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Reference lists red and teal. Asked to return both, the answer gives only red."
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-03",
+      "id": "original-adequacy-03-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Return a JSON array containing the integer 3. Response:{\"value\":3}"
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-03",
+      "id": "original-adequacy-03-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Task: Output an array with integer 3. Answer is an object with a value property set to 3."
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-04",
+      "id": "original-adequacy-04-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Is the library open Sunday? Reference: Closed Sunday. Response:No, it is closed on Sunday."
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-04",
+      "id": "original-adequacy-04-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Reference says the library is closed on Sunday. Asked whether it opens Sunday, the answer says no."
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-05",
+      "id": "original-adequacy-05-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Say exactly two words. Response:All done now"
+    },
+    {
+      "expected": "no",
+      "family": "adequacy",
+      "group": "original-adequacy-05",
+      "id": "original-adequacy-05-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Task requires exactly two words; the response is All done now."
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-06",
+      "id": "original-adequacy-06-0",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Request: Which train leaves first? Reference:A at 09:20, B at 08:50. Response:B"
+    },
+    {
+      "expected": "yes",
+      "family": "adequacy",
+      "group": "original-adequacy-06",
+      "id": "original-adequacy-06-1",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "false": "Wrong, incomplete, unsupported or violates a constraint",
+          "true": "Correct, complete, and follows all explicit constraints"
+        },
+        "instructions": "Does the response fully satisfy the request, using the supplied reference when present?",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Reference departures are 09:20 for A and 08:50 for B. The requested earliest train is answered B."
+    },
+    {
+      "expected": "math",
+      "family": "routing",
+      "group": "original-routing-01",
+      "id": "original-routing-01-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Compute the least common multiple of 12 and 18."
+    },
+    {
+      "expected": "math",
+      "family": "routing",
+      "group": "original-routing-01",
+      "id": "original-routing-01-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Find LCM(12,18)."
+    },
+    {
+      "expected": "coding",
+      "family": "routing",
+      "group": "original-routing-02",
+      "id": "original-routing-02-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Write a Python function that reverses a list; no files need editing."
+    },
+    {
+      "expected": "coding",
+      "family": "routing",
+      "group": "original-routing-02",
+      "id": "original-routing-02-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Show standalone Python code to reverse a list."
+    },
+    {
+      "expected": "coding_agent",
+      "family": "routing",
+      "group": "original-routing-03",
+      "id": "original-routing-03-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Open this repository, fix the failing parser, and run its tests."
+    },
+    {
+      "expected": "coding_agent",
+      "family": "routing",
+      "group": "original-routing-03",
+      "id": "original-routing-03-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Inspect the project files, repair the parser bug, and execute the test suite."
+    },
+    {
+      "expected": "document",
+      "family": "routing",
+      "group": "original-routing-04",
+      "id": "original-routing-04-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Read the attached contract and list its renewal dates."
+    },
+    {
+      "expected": "document",
+      "family": "routing",
+      "group": "original-routing-04",
+      "id": "original-routing-04-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Extract the renewal dates from the provided agreement."
+    },
+    {
+      "expected": "tools",
+      "family": "routing",
+      "group": "original-routing-05",
+      "id": "original-routing-05-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Use the calendar service to move my meeting to Friday."
+    },
+    {
+      "expected": "tools",
+      "family": "routing",
+      "group": "original-routing-05",
+      "id": "original-routing-05-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Reschedule my meeting for Friday in the calendar app."
+    },
+    {
+      "expected": "general",
+      "family": "routing",
+      "group": "original-routing-06",
+      "id": "original-routing-06-0",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Suggest three imaginative names for a pet dragon."
+    },
+    {
+      "expected": "general",
+      "family": "routing",
+      "group": "original-routing-06",
+      "id": "original-routing-06-1",
+      "labels": [
+        "math",
+        "coding",
+        "coding_agent",
+        "document",
+        "tools",
+        "general"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Explicit rubric, reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench original authored scenario"
+      },
+      "question": {
+        "criteria": {
+          "coding": "Self-contained code writing or explanation without repository operations",
+          "coding_agent": "Inspect/edit repository files or run tests",
+          "document": "Answer from a supplied document",
+          "general": "None of the specialist categories",
+          "math": "Self-contained calculation or proof",
+          "tools": "Carry out an external service action"
+        },
+        "instructions": "Choose the specialist needed for the request. File edits with test execution use coding_agent, even if code-related.",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Give me three creative pet-dragon names."
+    }
+  ]
+}

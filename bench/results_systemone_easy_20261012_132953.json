@@ -1,0 +1,288 @@
+{
+  "timestamp": "20261012_132953",
+  "server_url": "http://127.0.0.1:8096",
+  "endpoint": "/v1/systemone",
+  "input_file": "bench/easy.jsonl",
+  "candidates": "symbols",
+  "prompt_mode": "raw",
+  "mode": "auto",
+  "total_items": 5,
+  "evaluated_count": 5,
+  "correct_count": 5,
+  "overall_accuracy_pct": 100.0,
+  "total_elapsed_sec": 0.9732045000127982,
+  "family_breakdown": {
+    "intent": {
+      "total": 5,
+      "correct": 5,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.9861708573878123,
+      "mean_latency_ms": 194.36772000044584
+    }
+  },
+  "latency": {
+    "mean_ms": 194.36772000044584,
+    "median_ms": 191.90439999511,
+    "min_ms": 179.7190000070259,
+    "max_ms": 207.27659999101888
+  },
+  "results": [
+    {
+      "id": "easy-intent-00",
+      "family": "intent",
+      "expected": "track_order",
+      "predicted": "track_order",
+      "is_correct": true,
+      "confidence": 0.9863880555301837,
+      "probability": 0.989110444424147,
+      "wall_ms": 179.7190000070259,
+      "input_tokens": 98,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0032082847014256507,
+        "cancel_order": 0.002791404309363315,
+        "change_address": 0.0025386205242470725,
+        "report_damage": 0.0023512460408170494,
+        "track_order": 0.989110444424147
+      }
+    },
+    {
+      "id": "easy-intent-01",
+      "family": "intent",
+      "expected": "cancel_order",
+      "predicted": "cancel_order",
+      "is_correct": true,
+      "confidence": 0.9847987320111059,
+      "probability": 0.9878389856088848,
+      "wall_ms": 186.60620000446215,
+      "input_tokens": 96,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0038449303394468455,
+        "cancel_order": 0.9878389856088848,
+        "change_address": 0.0036496263279765717,
+        "report_damage": 0.0027332952348098787,
+        "track_order": 0.0019331624888819664
+      }
+    },
+    {
+      "id": "easy-intent-02",
+      "family": "intent",
+      "expected": "change_address",
+      "predicted": "change_address",
+      "is_correct": true,
+      "confidence": 0.9887944717038452,
+      "probability": 0.9910355773630761,
+      "wall_ms": 206.33240000461228,
+      "input_tokens": 102,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0022781254703939033,
+        "cancel_order": 0.002801012022433112,
+        "change_address": 0.9910355773630761,
+        "report_damage": 0.00247571105127232,
+        "track_order": 0.001409574092824509
+      }
+    },
+    {
+      "id": "easy-intent-03",
+      "family": "intent",
+      "expected": "report_damage",
+      "predicted": "report_damage",
+      "is_correct": true,
+      "confidence": 0.9800786780254236,
+      "probability": 0.984062942420339,
+      "wall_ms": 207.27659999101888,
+      "input_tokens": 92,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0034279871587538165,
+        "cancel_order": 0.005806491657842765,
+        "change_address": 0.0037198349603323514,
+        "report_damage": 0.984062942420339,
+        "track_order": 0.002982743802732052
+      }
+    },
+    {
+      "id": "easy-intent-04",
+      "family": "intent",
+      "expected": "billing_question",
+      "predicted": "billing_question",
+      "is_correct": true,
+      "confidence": 0.9735079214032683,
+      "probability": 0.9788063371226146,
+      "wall_ms": 191.90439999511,
+      "input_tokens": 96,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.9788063371226146,
+        "cancel_order": 0.009145308026914094,
+        "change_address": 0.004496631962262677,
+        "report_damage": 0.004030966267392741,
+        "track_order": 0.003520756620815927
+      }
+    }
+  ],
+  "benchmark_items": [
+    {
+      "expected": "track_order",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-00",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Where is my package? I ordered it last week and it still hasn't arrived."
+    },
+    {
+      "expected": "cancel_order",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-01",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Please cancel my order #4471, I don't need it anymore."
+    },
+    {
+      "expected": "change_address",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-02",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I moved. Can you ship my order to 12 Elm Street instead of the old address?"
+    },
+    {
+      "expected": "report_damage",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-03",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The mug I received arrived smashed into pieces."
+    },
+    {
+      "expected": "billing_question",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-04",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Why was I charged twice on my credit card statement for one order?"
+    }
+  ]
+}

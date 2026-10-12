@@ -1,0 +1,2331 @@
+{
+  "timestamp": "20261012_133337",
+  "server_url": "http://127.0.0.1:8096",
+  "endpoint": "/v1/systemone",
+  "input_file": "bench/easy.jsonl",
+  "candidates": "symbols",
+  "prompt_mode": "raw",
+  "mode": "auto",
+  "total_items": 48,
+  "evaluated_count": 48,
+  "correct_count": 48,
+  "overall_accuracy_pct": 100.0,
+  "total_elapsed_sec": 9.363464699999895,
+  "family_breakdown": {
+    "extraction": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.9835772426395397,
+      "mean_latency_ms": 163.76485833219098
+    },
+    "fact": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.0,
+      "mean_latency_ms": 191.01814166909512
+    },
+    "intent": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.9873448884337255,
+      "mean_latency_ms": 226.88343333478164
+    },
+    "tool_selection": {
+      "total": 12,
+      "correct": 12,
+      "accuracy_pct": 100.0,
+      "mean_prob": 0.988505435958246,
+      "mean_latency_ms": 197.03730833498412
+    }
+  },
+  "latency": {
+    "mean_ms": 194.67593541776296,
+    "median_ms": 193.50130000384524,
+    "min_ms": 142.9700999869965,
+    "max_ms": 572.3580999911064
+  },
+  "results": [
+    {
+      "id": "easy-intent-00",
+      "family": "intent",
+      "expected": "track_order",
+      "predicted": "track_order",
+      "is_correct": true,
+      "confidence": 0.9863880555301837,
+      "probability": 0.989110444424147,
+      "wall_ms": 572.3580999911064,
+      "input_tokens": 98,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0032082847014256507,
+        "cancel_order": 0.002791404309363315,
+        "change_address": 0.0025386205242470725,
+        "report_damage": 0.0023512460408170494,
+        "track_order": 0.989110444424147
+      }
+    },
+    {
+      "id": "easy-intent-01",
+      "family": "intent",
+      "expected": "cancel_order",
+      "predicted": "cancel_order",
+      "is_correct": true,
+      "confidence": 0.9847987320111059,
+      "probability": 0.9878389856088848,
+      "wall_ms": 180.3941000107443,
+      "input_tokens": 96,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0038449303394468455,
+        "cancel_order": 0.9878389856088848,
+        "change_address": 0.0036496263279765717,
+        "report_damage": 0.0027332952348098787,
+        "track_order": 0.0019331624888819664
+      }
+    },
+    {
+      "id": "easy-intent-02",
+      "family": "intent",
+      "expected": "change_address",
+      "predicted": "change_address",
+      "is_correct": true,
+      "confidence": 0.9887944717038452,
+      "probability": 0.9910355773630761,
+      "wall_ms": 213.44300000055227,
+      "input_tokens": 102,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0022781254703939033,
+        "cancel_order": 0.002801012022433112,
+        "change_address": 0.9910355773630761,
+        "report_damage": 0.00247571105127232,
+        "track_order": 0.001409574092824509
+      }
+    },
+    {
+      "id": "easy-intent-03",
+      "family": "intent",
+      "expected": "report_damage",
+      "predicted": "report_damage",
+      "is_correct": true,
+      "confidence": 0.9800786780254236,
+      "probability": 0.984062942420339,
+      "wall_ms": 194.32530000631232,
+      "input_tokens": 92,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0034279871587538165,
+        "cancel_order": 0.005806491657842765,
+        "change_address": 0.0037198349603323514,
+        "report_damage": 0.984062942420339,
+        "track_order": 0.002982743802732052
+      }
+    },
+    {
+      "id": "easy-intent-04",
+      "family": "intent",
+      "expected": "billing_question",
+      "predicted": "billing_question",
+      "is_correct": true,
+      "confidence": 0.9735079214032683,
+      "probability": 0.9788063371226146,
+      "wall_ms": 190.42090000584722,
+      "input_tokens": 96,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.9788063371226146,
+        "cancel_order": 0.009145308026914094,
+        "change_address": 0.004496631962262677,
+        "report_damage": 0.004030966267392741,
+        "track_order": 0.003520756620815927
+      }
+    },
+    {
+      "id": "easy-intent-05",
+      "family": "intent",
+      "expected": "track_order",
+      "predicted": "track_order",
+      "is_correct": true,
+      "confidence": 0.9847815828463216,
+      "probability": 0.9878252662770572,
+      "wall_ms": 195.81509999989066,
+      "input_tokens": 94,
+      "cached_tokens": 0,
+      "probabilities": {
+        "billing_question": 0.0035532281163971353,
+        "cancel_order": 0.003476784860500226,
+        "change_address": 0.0027499120905452785,
+        "report_damage": 0.002394808655500108,
+        "track_order": 0.9878252662770572
+      }
+    },
+    {
+      "id": "easy-intent-06",
+      "family": "intent",
+      "expected": "set_alarm",
+      "predicted": "set_alarm",
+      "is_correct": true,
+      "confidence": 0.9870790998603912,
+      "probability": 0.9896632798883129,
+      "wall_ms": 199.35340000665747,
+      "input_tokens": 82,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.0026609105079512746,
+        "send_message": 0.003367050333338212,
+        "set_alarm": 0.9896632798883129,
+        "turn_off_lights": 0.002713619991626971,
+        "weather": 0.0015951392787706298
+      }
+    },
+    {
+      "id": "easy-intent-07",
+      "family": "intent",
+      "expected": "play_music",
+      "predicted": "play_music",
+      "is_correct": true,
+      "confidence": 0.981396071358962,
+      "probability": 0.9851168570871696,
+      "wall_ms": 181.2430999998469,
+      "input_tokens": 75,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.9851168570871696,
+        "send_message": 0.006057413396296215,
+        "set_alarm": 0.0034260830815776022,
+        "turn_off_lights": 0.002613134091277471,
+        "weather": 0.0027865123436793425
+      }
+    },
+    {
+      "id": "easy-intent-08",
+      "family": "intent",
+      "expected": "weather",
+      "predicted": "weather",
+      "is_correct": true,
+      "confidence": 0.9872660715799475,
+      "probability": 0.989812857263958,
+      "wall_ms": 200.97759999043774,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.002841413467759503,
+        "send_message": 0.003085028225044553,
+        "set_alarm": 0.0022651152508846354,
+        "turn_off_lights": 0.0019955857923533707,
+        "weather": 0.989812857263958
+      }
+    },
+    {
+      "id": "easy-intent-09",
+      "family": "intent",
+      "expected": "send_message",
+      "predicted": "send_message",
+      "is_correct": true,
+      "confidence": 0.983098264828808,
+      "probability": 0.9864786118630464,
+      "wall_ms": 200.02540000132285,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.004563325320234748,
+        "send_message": 0.9864786118630464,
+        "set_alarm": 0.004042874453249563,
+        "turn_off_lights": 0.0029205085549924175,
+        "weather": 0.0019946798084766785
+      }
+    },
+    {
+      "id": "easy-intent-10",
+      "family": "intent",
+      "expected": "turn_off_lights",
+      "predicted": "turn_off_lights",
+      "is_correct": true,
+      "confidence": 0.9855490021093329,
+      "probability": 0.9884392016874664,
+      "wall_ms": 192.67730000137817,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.0024337407582497974,
+        "send_message": 0.0032844457894245552,
+        "set_alarm": 0.0030798126921674157,
+        "turn_off_lights": 0.9884392016874664,
+        "weather": 0.00276279907269174
+      }
+    },
+    {
+      "id": "easy-intent-11",
+      "family": "intent",
+      "expected": "set_alarm",
+      "predicted": "set_alarm",
+      "is_correct": true,
+      "confidence": 0.9874353752482917,
+      "probability": 0.9899483001986334,
+      "wall_ms": 201.56790000328328,
+      "input_tokens": 78,
+      "cached_tokens": 0,
+      "probabilities": {
+        "play_music": 0.0024937674801687004,
+        "send_message": 0.003049259503323376,
+        "set_alarm": 0.9899483001986334,
+        "turn_off_lights": 0.00272319124796396,
+        "weather": 0.001785481569910689
+      }
+    },
+    {
+      "id": "easy-fact-00",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 196.23169999977108,
+      "input_tokens": 74,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-01",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 175.8101000013994,
+      "input_tokens": 70,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-02",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 197.7210000040941,
+      "input_tokens": 75,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-03",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 163.63960001035593,
+      "input_tokens": 80,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-04",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 196.42860000021756,
+      "input_tokens": 74,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-05",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 195.40840000263415,
+      "input_tokens": 74,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-06",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 205.31449999543838,
+      "input_tokens": 88,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-07",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 191.96610001381487,
+      "input_tokens": 71,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-08",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 190.49100000120234,
+      "input_tokens": 66,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-09",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 208.08860000397544,
+      "input_tokens": 66,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-10",
+      "family": "fact",
+      "expected": "yes",
+      "predicted": "yes",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 197.28269999905024,
+      "input_tokens": 74,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-fact-11",
+      "family": "fact",
+      "expected": "no",
+      "predicted": "no",
+      "is_correct": true,
+      "confidence": 0.0,
+      "probability": 0.0,
+      "wall_ms": 173.83539999718778,
+      "input_tokens": 75,
+      "cached_tokens": 0,
+      "probabilities": {}
+    },
+    {
+      "id": "easy-extraction-00",
+      "family": "extraction",
+      "expected": "paypal",
+      "predicted": "paypal",
+      "is_correct": true,
+      "confidence": 0.9796245715948334,
+      "probability": 0.984718428696125,
+      "wall_ms": 143.52699999290053,
+      "input_tokens": 59,
+      "cached_tokens": 0,
+      "probabilities": {
+        "bank_transfer": 0.004732428109766118,
+        "cash": 0.004874858160546252,
+        "credit_card": 0.0056742850335625775,
+        "paypal": 0.984718428696125
+      }
+    },
+    {
+      "id": "easy-extraction-01",
+      "family": "extraction",
+      "expected": "cash",
+      "predicted": "cash",
+      "is_correct": true,
+      "confidence": 0.9792298026309029,
+      "probability": 0.9844223519731772,
+      "wall_ms": 161.41309999511577,
+      "input_tokens": 61,
+      "cached_tokens": 0,
+      "probabilities": {
+        "bank_transfer": 0.003963476080481175,
+        "cash": 0.9844223519731772,
+        "credit_card": 0.006395454299240871,
+        "paypal": 0.0052187176471007474
+      }
+    },
+    {
+      "id": "easy-extraction-02",
+      "family": "extraction",
+      "expected": "bank_transfer",
+      "predicted": "bank_transfer",
+      "is_correct": true,
+      "confidence": 0.980770097353238,
+      "probability": 0.9855775730149284,
+      "wall_ms": 181.6739000059897,
+      "input_tokens": 61,
+      "cached_tokens": 0,
+      "probabilities": {
+        "bank_transfer": 0.9855775730149284,
+        "cash": 0.0054448851307956556,
+        "credit_card": 0.00478942482227648,
+        "paypal": 0.004188117031999387
+      }
+    },
+    {
+      "id": "easy-extraction-03",
+      "family": "extraction",
+      "expected": "high",
+      "predicted": "high",
+      "is_correct": true,
+      "confidence": 0.9676688397739159,
+      "probability": 0.975751629830437,
+      "wall_ms": 171.05469999660272,
+      "input_tokens": 63,
+      "cached_tokens": 0,
+      "probabilities": {
+        "high": 0.975751629830437,
+        "low": 0.004606162357768856,
+        "medium": 0.005373560368319584,
+        "urgent": 0.014268647443474815
+      }
+    },
+    {
+      "id": "easy-extraction-04",
+      "family": "extraction",
+      "expected": "low",
+      "predicted": "low",
+      "is_correct": true,
+      "confidence": 0.9826291038639524,
+      "probability": 0.9869718278979643,
+      "wall_ms": 175.49130000406876,
+      "input_tokens": 60,
+      "cached_tokens": 0,
+      "probabilities": {
+        "high": 0.004430264136357131,
+        "low": 0.9869718278979643,
+        "medium": 0.003828009125134052,
+        "urgent": 0.004769898840544526
+      }
+    },
+    {
+      "id": "easy-extraction-05",
+      "family": "extraction",
+      "expected": "urgent",
+      "predicted": "urgent",
+      "is_correct": true,
+      "confidence": 0.9713762862478189,
+      "probability": 0.9785322146858642,
+      "wall_ms": 179.61340000329074,
+      "input_tokens": 60,
+      "cached_tokens": 0,
+      "probabilities": {
+        "high": 0.01192077406990953,
+        "low": 0.004543416100749189,
+        "medium": 0.005003595143477079,
+        "urgent": 0.9785322146858642
+      }
+    },
+    {
+      "id": "easy-extraction-06",
+      "family": "extraction",
+      "expected": "M",
+      "predicted": "M",
+      "is_correct": true,
+      "confidence": 0.9762852629046321,
+      "probability": 0.9822139471784741,
+      "wall_ms": 175.4178000119282,
+      "input_tokens": 55,
+      "cached_tokens": 0,
+      "probabilities": {
+        "L": 0.006402283130127699,
+        "M": 0.9822139471784741,
+        "S": 0.0051922727936133655,
+        "XL": 0.006191496897784874
+      }
+    },
+    {
+      "id": "easy-extraction-07",
+      "family": "extraction",
+      "expected": "XL",
+      "predicted": "XL",
+      "is_correct": true,
+      "confidence": 0.9728041454646501,
+      "probability": 0.9796031090984876,
+      "wall_ms": 169.83719999552704,
+      "input_tokens": 53,
+      "cached_tokens": 0,
+      "probabilities": {
+        "L": 0.009252344260272279,
+        "M": 0.005716126840969452,
+        "S": 0.005428419800270624,
+        "XL": 0.9796031090984876
+      }
+    },
+    {
+      "id": "easy-extraction-08",
+      "family": "extraction",
+      "expected": "thursday",
+      "predicted": "thursday",
+      "is_correct": true,
+      "confidence": 0.9845272484701697,
+      "probability": 0.9876217987761358,
+      "wall_ms": 147.8410999989137,
+      "input_tokens": 54,
+      "cached_tokens": 0,
+      "probabilities": {
+        "friday": 0.003416731333301795,
+        "monday": 0.003972097583177931,
+        "thursday": 0.9876217987761358,
+        "tuesday": 0.0030202941499376883,
+        "wednesday": 0.001969078157446667
+      }
+    },
+    {
+      "id": "easy-extraction-09",
+      "family": "extraction",
+      "expected": "monday",
+      "predicted": "monday",
+      "is_correct": true,
+      "confidence": 0.9838624083962602,
+      "probability": 0.9870899267170082,
+      "wall_ms": 142.9700999869965,
+      "input_tokens": 57,
+      "cached_tokens": 0,
+      "probabilities": {
+        "friday": 0.0041131862961361065,
+        "monday": 0.9870899267170082,
+        "thursday": 0.0029173618315460996,
+        "tuesday": 0.0037826663254887437,
+        "wednesday": 0.0020968588298208263
+      }
+    },
+    {
+      "id": "easy-extraction-10",
+      "family": "extraction",
+      "expected": "friday",
+      "predicted": "friday",
+      "is_correct": true,
+      "confidence": 0.9851817390063489,
+      "probability": 0.9881453912050792,
+      "wall_ms": 164.39999999420252,
+      "input_tokens": 54,
+      "cached_tokens": 0,
+      "probabilities": {
+        "friday": 0.9881453912050792,
+        "monday": 0.004288111713816493,
+        "thursday": 0.0032286943264786963,
+        "tuesday": 0.002033885960274958,
+        "wednesday": 0.0023039167943505845
+      }
+    },
+    {
+      "id": "easy-extraction-11",
+      "family": "extraction",
+      "expected": "credit_card",
+      "predicted": "credit_card",
+      "is_correct": true,
+      "confidence": 0.97637161680106,
+      "probability": 0.982278712600795,
+      "wall_ms": 151.9387000007555,
+      "input_tokens": 62,
+      "cached_tokens": 0,
+      "probabilities": {
+        "bank_transfer": 0.005255828624277979,
+        "cash": 0.0047772649670900285,
+        "credit_card": 0.982278712600795,
+        "paypal": 0.007688193807836896
+      }
+    },
+    {
+      "id": "easy-tool_selection-00",
+      "family": "tool_selection",
+      "expected": "get_weather",
+      "predicted": "get_weather",
+      "is_correct": true,
+      "confidence": 0.9865537448786327,
+      "probability": 0.9892429959029061,
+      "wall_ms": 167.96079999767244,
+      "input_tokens": 87,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.002570791005764436,
+        "create_calendar_event": 0.0030721924796310494,
+        "get_weather": 0.9892429959029061,
+        "send_email": 0.003276462996441921,
+        "translate_text": 0.001837557615256377
+      }
+    },
+    {
+      "id": "easy-tool_selection-01",
+      "family": "tool_selection",
+      "expected": "send_email",
+      "predicted": "send_email",
+      "is_correct": true,
+      "confidence": 0.9849661815517025,
+      "probability": 0.987972945241362,
+      "wall_ms": 191.12950000271667,
+      "input_tokens": 87,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.002675770437486086,
+        "create_calendar_event": 0.003948103687442215,
+        "get_weather": 0.0031222779204140316,
+        "send_email": 0.987972945241362,
+        "translate_text": 0.0022809027132956023
+      }
+    },
+    {
+      "id": "easy-tool_selection-02",
+      "family": "tool_selection",
+      "expected": "create_calendar_event",
+      "predicted": "create_calendar_event",
+      "is_correct": true,
+      "confidence": 0.9862104173843336,
+      "probability": 0.9889683339074669,
+      "wall_ms": 207.26779999677092,
+      "input_tokens": 90,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.0029817312913227065,
+        "create_calendar_event": 0.9889683339074669,
+        "get_weather": 0.0032830840715810513,
+        "send_email": 0.0031658982126573846,
+        "translate_text": 0.0016009525169719398
+      }
+    },
+    {
+      "id": "easy-tool_selection-03",
+      "family": "tool_selection",
+      "expected": "convert_currency",
+      "predicted": "convert_currency",
+      "is_correct": true,
+      "confidence": 0.9796555010569047,
+      "probability": 0.9837244008455237,
+      "wall_ms": 203.35560000967234,
+      "input_tokens": 87,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.9837244008455237,
+        "create_calendar_event": 0.0051487043861482285,
+        "get_weather": 0.003597677491024456,
+        "send_email": 0.002830598130058373,
+        "translate_text": 0.004698619147245249
+      }
+    },
+    {
+      "id": "easy-tool_selection-04",
+      "family": "tool_selection",
+      "expected": "translate_text",
+      "predicted": "translate_text",
+      "is_correct": true,
+      "confidence": 0.9861413306893548,
+      "probability": 0.9889130645514839,
+      "wall_ms": 191.89299999561626,
+      "input_tokens": 85,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.0029582152297711905,
+        "create_calendar_event": 0.0031781024738239284,
+        "get_weather": 0.0024183378432554585,
+        "send_email": 0.002532279901665474,
+        "translate_text": 0.9889130645514839
+      }
+    },
+    {
+      "id": "easy-tool_selection-05",
+      "family": "tool_selection",
+      "expected": "create_calendar_event",
+      "predicted": "create_calendar_event",
+      "is_correct": true,
+      "confidence": 0.9862514004295952,
+      "probability": 0.9890011203436763,
+      "wall_ms": 201.9818000117084,
+      "input_tokens": 89,
+      "cached_tokens": 0,
+      "probabilities": {
+        "convert_currency": 0.0030489374448821036,
+        "create_calendar_event": 0.9890011203436763,
+        "get_weather": 0.00327461866121421,
+        "send_email": 0.0031477047294405872,
+        "translate_text": 0.0015276188207868008
+      }
+    },
+    {
+      "id": "easy-tool_selection-06",
+      "family": "tool_selection",
+      "expected": "search_flights",
+      "predicted": "search_flights",
+      "is_correct": true,
+      "confidence": 0.987555783722108,
+      "probability": 0.9900446269776865,
+      "wall_ms": 197.68300000578165,
+      "input_tokens": 89,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.0022300244791130363,
+        "call_taxi": 0.002758157062892696,
+        "get_stock_price": 0.002846274909702171,
+        "search_flights": 0.9900446269776865,
+        "set_reminder": 0.0021209165706056656
+      }
+    },
+    {
+      "id": "easy-tool_selection-07",
+      "family": "tool_selection",
+      "expected": "book_restaurant",
+      "predicted": "book_restaurant",
+      "is_correct": true,
+      "confidence": 0.9829238184219371,
+      "probability": 0.9863390547375497,
+      "wall_ms": 204.27509999717586,
+      "input_tokens": 89,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.9863390547375497,
+        "call_taxi": 0.005087528053882766,
+        "get_stock_price": 0.003209523704631092,
+        "search_flights": 0.0024101094501365844,
+        "set_reminder": 0.002953784053799797
+      }
+    },
+    {
+      "id": "easy-tool_selection-08",
+      "family": "tool_selection",
+      "expected": "set_reminder",
+      "predicted": "set_reminder",
+      "is_correct": true,
+      "confidence": 0.9885310795471741,
+      "probability": 0.9908248636377393,
+      "wall_ms": 202.69020000705495,
+      "input_tokens": 88,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.0022194819035506056,
+        "call_taxi": 0.0024967136380572353,
+        "get_stock_price": 0.0024592694954642556,
+        "search_flights": 0.0019996713251885416,
+        "set_reminder": 0.9908248636377393
+      }
+    },
+    {
+      "id": "easy-tool_selection-09",
+      "family": "tool_selection",
+      "expected": "get_stock_price",
+      "predicted": "get_stock_price",
+      "is_correct": true,
+      "confidence": 0.986743605277623,
+      "probability": 0.9893948842220983,
+      "wall_ms": 204.79689999774564,
+      "input_tokens": 86,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.002831915651959665,
+        "call_taxi": 0.0029199189137021652,
+        "get_stock_price": 0.9893948842220983,
+        "search_flights": 0.0029752894348755096,
+        "set_reminder": 0.0018779917773643665
+      }
+    },
+    {
+      "id": "easy-tool_selection-10",
+      "family": "tool_selection",
+      "expected": "call_taxi",
+      "predicted": "call_taxi",
+      "is_correct": true,
+      "confidence": 0.9828891746850138,
+      "probability": 0.986311339748011,
+      "wall_ms": 196.9214999990072,
+      "input_tokens": 85,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.0033529240418684824,
+        "call_taxi": 0.986311339748011,
+        "get_stock_price": 0.0042437228486235596,
+        "search_flights": 0.0033902188669870663,
+        "set_reminder": 0.0027017944945097864
+      }
+    },
+    {
+      "id": "easy-tool_selection-11",
+      "family": "tool_selection",
+      "expected": "set_reminder",
+      "predicted": "set_reminder",
+      "is_correct": true,
+      "confidence": 0.9891595017293117,
+      "probability": 0.9913276013834493,
+      "wall_ms": 194.49249999888707,
+      "input_tokens": 88,
+      "cached_tokens": 0,
+      "probabilities": {
+        "book_restaurant": 0.0021675464847004345,
+        "call_taxi": 0.0023405673588383913,
+        "get_stock_price": 0.002223345855832488,
+        "search_flights": 0.001940938917179207,
+        "set_reminder": 0.9913276013834493
+      }
+    }
+  ],
+  "benchmark_items": [
+    {
+      "expected": "track_order",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-00",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Where is my package? I ordered it last week and it still hasn't arrived."
+    },
+    {
+      "expected": "cancel_order",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-01",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Please cancel my order #4471, I don't need it anymore."
+    },
+    {
+      "expected": "change_address",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-02",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I moved. Can you ship my order to 12 Elm Street instead of the old address?"
+    },
+    {
+      "expected": "report_damage",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-03",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "The mug I received arrived smashed into pieces."
+    },
+    {
+      "expected": "billing_question",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-04",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Why was I charged twice on my credit card statement for one order?"
+    },
+    {
+      "expected": "track_order",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-05",
+      "labels": [
+        "track_order",
+        "cancel_order",
+        "change_address",
+        "report_damage",
+        "billing_question"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "billing_question": "Asks about a charge, invoice or payment",
+          "cancel_order": "Wants to cancel an order",
+          "change_address": "Wants to change the delivery address",
+          "report_damage": "Received an item that is broken or damaged",
+          "track_order": "Wants to know where an order is or when it arrives"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "When will my order be delivered? The tracking page shows nothing."
+    },
+    {
+      "expected": "set_alarm",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-06",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Wake me up at 6:30 tomorrow morning."
+    },
+    {
+      "expected": "play_music",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-07",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Play some Taylor Swift."
+    },
+    {
+      "expected": "weather",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-08",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Will it rain in Berlin tomorrow?"
+    },
+    {
+      "expected": "send_message",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-09",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Text Anna that I'll be ten minutes late."
+    },
+    {
+      "expected": "turn_off_lights",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-10",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Turn off the lights in the bedroom."
+    },
+    {
+      "expected": "set_alarm",
+      "family": "intent",
+      "group": null,
+      "id": "easy-intent-11",
+      "labels": [
+        "set_alarm",
+        "play_music",
+        "weather",
+        "send_message",
+        "turn_off_lights"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "play_music": "Play a song, album, artist or playlist",
+          "send_message": "Send a text message to someone",
+          "set_alarm": "Set an alarm or wake-up time",
+          "turn_off_lights": "Switch lights off",
+          "weather": "Ask about the weather or forecast"
+        },
+        "instructions": "Which intent does the user's message express?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Set an alarm for 7 am."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-00",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Has the order been shipped? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Order #1182. Status: shipped on 3 September. Carrier: DHL."
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-01",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Has the order been shipped? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Order #1183. Status: not yet shipped, waiting for stock."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-02",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is the invoice paid? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Invoice 2026-044. Amount: 120 EUR. Payment status: paid in full."
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-03",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is the invoice paid? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Invoice 2026-045. Amount: 80 EUR. Payment status: unpaid, overdue since 1 August."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-04",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is the guest allergic to peanuts? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Guest profile: Maria Lopez. Allergies: peanuts. Diet: vegetarian."
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-05",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is the guest allergic to peanuts? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Guest profile: Jonas Weber. Allergies: none. Diet: no restrictions."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-06",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is meeting room B booked from 14:00 to 15:00? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Meeting room B: booked from 14:00 to 15:00 by the sales team."
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-07",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is meeting room C booked this afternoon? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Meeting room C: free all afternoon, no bookings."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-08",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is two-factor authentication enabled? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Account settings: two-factor authentication is enabled."
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-09",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Is two-factor authentication enabled? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "Account settings: two-factor authentication is disabled."
+    },
+    {
+      "expected": "yes",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-10",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Did the user agree to subscribe to the newsletter? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "The user wrote: 'Yes, please subscribe me to the newsletter.'"
+    },
+    {
+      "expected": "no",
+      "family": "fact",
+      "group": null,
+      "id": "easy-fact-11",
+      "labels": [
+        "no",
+        "yes"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "false": "The text states that this is not so",
+          "true": "The text states that this is so"
+        },
+        "instructions": "Did the user agree to subscribe to the newsletter? Answer strictly from the facts stated in the text.",
+        "type": "noul"
+      },
+      "split": "public",
+      "state": "The user wrote: 'No thanks, I do not want the newsletter.'"
+    },
+    {
+      "expected": "paypal",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-00",
+      "labels": [
+        "credit_card",
+        "paypal",
+        "bank_transfer",
+        "cash"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "bank_transfer": "Bank transfer / wire",
+          "cash": "Cash",
+          "credit_card": "Paid or wants to pay by credit card",
+          "paypal": "PayPal"
+        },
+        "instructions": "Which payment method does the customer name?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I paid with PayPal yesterday evening."
+    },
+    {
+      "expected": "cash",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-01",
+      "labels": [
+        "credit_card",
+        "paypal",
+        "bank_transfer",
+        "cash"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "bank_transfer": "Bank transfer / wire",
+          "cash": "Cash",
+          "credit_card": "Paid or wants to pay by credit card",
+          "paypal": "PayPal"
+        },
+        "instructions": "Which payment method does the customer name?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I'll pay cash when the courier arrives."
+    },
+    {
+      "expected": "bank_transfer",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-02",
+      "labels": [
+        "credit_card",
+        "paypal",
+        "bank_transfer",
+        "cash"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "bank_transfer": "Bank transfer / wire",
+          "cash": "Cash",
+          "credit_card": "Paid or wants to pay by credit card",
+          "paypal": "PayPal"
+        },
+        "instructions": "Which payment method does the customer name?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I sent the money by bank transfer on Monday."
+    },
+    {
+      "expected": "high",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-03",
+      "labels": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "high": "High priority",
+          "low": "Low priority",
+          "medium": "Medium priority",
+          "urgent": "Urgent / critical"
+        },
+        "instructions": "Which priority does the ticket state?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Ticket #88 - Priority: HIGH - Printer on floor 2 is jammed."
+    },
+    {
+      "expected": "low",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-04",
+      "labels": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "high": "High priority",
+          "low": "Low priority",
+          "medium": "Medium priority",
+          "urgent": "Urgent / critical"
+        },
+        "instructions": "Which priority does the ticket state?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Ticket #89 - Priority: low - Please update my desk phone label."
+    },
+    {
+      "expected": "urgent",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-05",
+      "labels": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "high": "High priority",
+          "low": "Low priority",
+          "medium": "Medium priority",
+          "urgent": "Urgent / critical"
+        },
+        "instructions": "Which priority does the ticket state?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Ticket #90 - Priority: URGENT - Production database is down."
+    },
+    {
+      "expected": "M",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-06",
+      "labels": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "L": "Large",
+          "M": "Medium",
+          "S": "Small",
+          "XL": "Extra large"
+        },
+        "instructions": "Which shirt size does the customer ask for?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Could I get the blue shirt in size M, please?"
+    },
+    {
+      "expected": "XL",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-07",
+      "labels": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "L": "Large",
+          "M": "Medium",
+          "S": "Small",
+          "XL": "Extra large"
+        },
+        "instructions": "Which shirt size does the customer ask for?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "I need the jacket in extra large (XL)."
+    },
+    {
+      "expected": "thursday",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-08",
+      "labels": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "friday": "Friday",
+          "monday": "Monday",
+          "thursday": "Thursday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday"
+        },
+        "instructions": "Which day does the person propose for the meeting?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Let's meet on Thursday at 10."
+    },
+    {
+      "expected": "monday",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-09",
+      "labels": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "friday": "Friday",
+          "monday": "Monday",
+          "thursday": "Thursday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday"
+        },
+        "instructions": "Which day does the person propose for the meeting?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Does Monday work for you? I'm free all day."
+    },
+    {
+      "expected": "friday",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-10",
+      "labels": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "friday": "Friday",
+          "monday": "Monday",
+          "thursday": "Thursday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday"
+        },
+        "instructions": "Which day does the person propose for the meeting?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "How about Friday afternoon for the review?"
+    },
+    {
+      "expected": "credit_card",
+      "family": "extraction",
+      "group": null,
+      "id": "easy-extraction-11",
+      "labels": [
+        "credit_card",
+        "paypal",
+        "bank_transfer",
+        "cash"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "bank_transfer": "Bank transfer / wire",
+          "cash": "Cash",
+          "credit_card": "Paid or wants to pay by credit card",
+          "paypal": "PayPal"
+        },
+        "instructions": "Which payment method does the customer name?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Please charge my credit card ending in 4242."
+    },
+    {
+      "expected": "get_weather",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-00",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "What's the weather like in Paris right now?"
+    },
+    {
+      "expected": "send_email",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-01",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Email Sarah the quarterly report and say it's attached."
+    },
+    {
+      "expected": "create_calendar_event",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-02",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Add a dentist appointment on Friday at 3 pm to my calendar."
+    },
+    {
+      "expected": "convert_currency",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-03",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "How much is 250 US dollars in euros?"
+    },
+    {
+      "expected": "translate_text",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-04",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Translate 'good morning' into Japanese."
+    },
+    {
+      "expected": "create_calendar_event",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-05",
+      "labels": [
+        "get_weather",
+        "send_email",
+        "create_calendar_event",
+        "convert_currency",
+        "translate_text"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "convert_currency": "Convert an amount from one currency to another",
+          "create_calendar_event": "Put an appointment or meeting into the calendar",
+          "get_weather": "Current weather or forecast for a place",
+          "send_email": "Send an email to a recipient",
+          "translate_text": "Translate text into another language"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Schedule a team meeting next Tuesday at 10 in my calendar."
+    },
+    {
+      "expected": "search_flights",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-06",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Find me flights from Munich to Lisbon on 12 October."
+    },
+    {
+      "expected": "book_restaurant",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-07",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Book a table for four at Luigi's tonight at 8."
+    },
+    {
+      "expected": "set_reminder",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-08",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Remind me to call my mother at 6 pm."
+    },
+    {
+      "expected": "get_stock_price",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-09",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "What is Apple's stock price right now?"
+    },
+    {
+      "expected": "call_taxi",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-10",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Get me a taxi to the main station."
+    },
+    {
+      "expected": "set_reminder",
+      "family": "tool_selection",
+      "group": null,
+      "id": "easy-tool_selection-11",
+      "labels": [
+        "search_flights",
+        "book_restaurant",
+        "set_reminder",
+        "get_stock_price",
+        "call_taxi"
+      ],
+      "provenance": {
+        "exclude_reason": null,
+        "label_basis": "Answer named or stated explicitly in the text; authored and reviewed before inference",
+        "license": "MIT",
+        "source": "JevBench v1.1 easy tier, original authored item"
+      },
+      "question": {
+        "criteria": {
+          "book_restaurant": "Reserve a table at a restaurant",
+          "call_taxi": "Order a taxi to a location",
+          "get_stock_price": "Look up the current price of a stock",
+          "search_flights": "Find flights between two cities",
+          "set_reminder": "Remind the user of something at a given time"
+        },
+        "instructions": "Which single tool should be called to handle this request?",
+        "type": "choice"
+      },
+      "split": "public",
+      "state": "Remind me tomorrow at 9 to water the plants."
+    }
+  ]
+}
